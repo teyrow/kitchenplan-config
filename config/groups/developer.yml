@@ -4,10 +4,10 @@ recipes:
         ##- applications::sass
         - applications::ssh_config
 #        - applications::macvim          # install xcode before trying to compile macvim
-        - dotfiles::vim
-        - applications::composer
+        #- dotfiles::vim
+        # - applications::composer
         - applications::postgresql
-        # - applications::mysql
+        - applications::mysql
         #- applications::php55
         - dotfiles::workspace
     mac_os_x:
@@ -56,7 +56,7 @@ attributes:
         cask_apps:
             - imageoptim
             - imagealpha
-            - phpstorm
+            #- phpstorm
             - sequel-pro
             - sourcetree
             - recordit
