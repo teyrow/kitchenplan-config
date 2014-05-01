@@ -1,14 +1,14 @@
 recipes:
     global:
         - dotfiles::gitconfig
-        - applications::sass
+        ##- applications::sass
         - applications::ssh_config
 #        - applications::macvim          # install xcode before trying to compile macvim
         - dotfiles::vim
         - applications::composer
         - applications::postgresql
-        - applications::mysql
-        - applications::php55
+        # - applications::mysql
+        #- applications::php55
         - dotfiles::workspace
     mac_os_x:
         #- applications::svgo
@@ -39,7 +39,7 @@ recipes:
         - osxdefaults::finder_search_the_current_folder_by_default
         - osxdefaults::finder_unhide_home
 attributes:
-    mysql_root_password: "root"
+    mysql_root_password: ""
     homebrewalt:
         apps:
             - git
@@ -52,7 +52,7 @@ attributes:
             - git-flow
             - siege
             - watch
-            - rsync
+            #- rsync
         cask_apps:
             - imageoptim
             - imagealpha
